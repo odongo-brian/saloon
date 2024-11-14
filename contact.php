@@ -6,10 +6,9 @@ use PHPMailer\PHPMailer\Exception;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
-    $firstName = strip_tags(trim($_POST["first-name"]));
-    $lastName = strip_tags(trim($_POST["last-name"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = strip_tags(trim($_POST["subject"]));
+    $name = strip_tags(trim($_POST["name"]));
+    $email = strip_tags(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $subject = filter_var(trim($_POST["subject"]));
     $message = strip_tags(trim($_POST["message"]));
 
     // Check that data was provided

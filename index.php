@@ -65,8 +65,13 @@
     <section class="hero" style="display: flex; align-items: center; justify-content: space-between; padding: 2em;">
         <div class="hero-content" style="max-width: 50%;">
             <h2 style="font-size: 2em; margin-bottom: 0.5em;">I'm a Passionate Beautician and Makeup Artist Based in Nairobi, kenya.</h2>
-            <p style="margin-bottom: 1em;">Dedicated to providing exceptional beauty services to enhance your natural beauty.</p>
-            <a href="contact.html" style="text-decoration: none; color: white; background-color: #e45858; padding: 0.75em 1.5em; border-radius: 5px;">Book Appointment</a>
+            <p style="margin-bottom: 1em;">Dedicated to providing exceptional beauty services to enhance your natural beauty.</p>  
+            <a href="contact.html" class="mt-4" style="text-decoration: none; color: white; background-color: #e45858; padding: 0.75em 1.5em; border-radius: 5px;">Book Appointment</a>
+            
+
+            
+
+
             
         </div>
         <div class="hero-image" style="flex: 1; display: flex; justify-content: flex-end;">
@@ -329,7 +334,7 @@
                 <div class="col-md-12" style="text-align: center;">
                     <h3 style="color: #ff704d; font-size: 1.5em;">Find Us on the Map</h3>
                     <div style="max-width: 100%; overflow: hidden; border-radius: 10px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.407366877537!2d-74.00475868475535!3d40.71272877933039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMyJzQ2LjgiTiA3NMKwMTAuNzI2W!5e0!3m2!1sen!2sus!4v1635154967645!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3586912052!2d36.68257655564126!3d-1.3028602733660888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1731588588256!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -382,9 +387,9 @@
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><img style="width: 40px;" src="img/WP.png" alt="Whatsapp"></a>
+                                <a href="#"><img style="width: 40px;" src="img/X.jpg" alt="Twitter"></a>
+                                <a href="#"><img style="width: 40px;" src="img/fb.png" alt="Facebook"></a>
                             </div>
                         </div>
                     </div>
