@@ -11,18 +11,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="margin-top: 70px;"> <!-- Offset body content to avoid overlap with fixed navbar -->
-    <header>
-        <nav style="display: flex; align-items: center; justify-content: space-between; padding: 1em; background-color: #f8e9e8; position: fixed; top: 0; width: 100%; z-index: 1000;">
-            <h1 style="margin: 0; font-size: 1.5em; color: #333;">Swizz Beauty and Cutz</h1>
-            <ul style="list-style: none; display: flex; gap: 1.5em; margin: 0; padding: 0;">
-                <li><a href="index.php" style="text-decoration: none; color: #e45858;">Home</a></li>
-                <li><a href="#about-us" style="text-decoration: none; color: #e45858;">About</a></li>
-                <li><a href="#services" style="text-decoration: none; color: #e45858;">Services</a></li>
-                <li><a href="#contact-us" style="text-decoration: none; color: #e45858;">Contact</a></li>
+    <!-- <header>
+        <nav class="navbar">
+            <h1 class="logo">Swizz Beauty and Cutz</h1>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
-            <a href="tel:+1234567890" style="text-decoration: none; color: white; background-color: #e45858; padding: 0.5em 1em; border-radius: 5px;">Call: +254 715 443 674</a>
+            <a href="tel:+1234567890" class="call-button">Call: +254 715 443 674</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
-    </header>
+    </header> -->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #f8e9e8;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php">Swizz Beauty and Cutz
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about-us">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact-us">Contact</a>
+        </li>
+        
+        <a href="tel:+1234567890" class="call-button">Call: +254 715 443 674</a>
+        
+       
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
 
     <section class="hero" style="display: flex; align-items: center; justify-content: space-between; padding: 2em;">
         <div class="hero-content" style="max-width: 50%;">
@@ -299,60 +337,116 @@
     </section>
     
     
-
-    <footer style="padding: 2em; background-color: #fff5f5; color: #333; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1em; text-align: left; margin-top: 2em;">
-        <div>
-            <h2 style="font-size: 1.5em; margin-bottom: 0.5em;">Swizz Beauty and Cutz</h2>
-            <div style="display: flex; gap: 0.5em;">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/yourpage" target="_blank" style="text-decoration: none; color: #e45858;">
-                    <img src="img/fb.png" alt="Facebook" style="width: 24px;">
-                </a>
-                <!-- X (Twitter) -->
-                <a href="https://www.x.com/daizybless58184" target="_blank" style="text-decoration: none; color: #e45858;">
-                    <img src="img/X.jpg" alt="X" style="width: 24px;">
-                </a>
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/daizy3968" target="_blank" style="text-decoration: none; color: #e45858;">
-                    <img src="img/IG.png" alt="Instagram" style="width: 24px;">
-                </a>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>Swizz Beauty and Cutz, 18-0100, Nairobi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+2547000000 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span> infoSwizzbeauty.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.php"><img src="img/ourlogo.jpg" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>We are a professional beauty salon </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="#about-us">about</a></li>
+                                <li><a href="#services">services</a></li>
+                                <li><a href="#contact-us">Contact</a></li>
+                                <li><a href="#services">Expert Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Business Hours</h3>
+                            </div>
+                            <div>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li>Monday – Closed</li>
+                                <li>Tuesday : 11.00 – 09.00</li>
+                                <li>Wednesday : 11.00 – 09.00</li>
+                                <li>Thursday : 11.00 – 09.00</li>
+                                <li>Friday : 11.00 – 09.00</li>
+                                <li>Saturday : 11.00 – 09.00</li>
+                                <li>Sunday : 11.00 – 09.00</li>
+                            </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <h3 style="font-size: 1.2em; margin-bottom: 0.5em;">Services</h3>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li>Casual Make Up</li>
-                <li>Hair Styling</li>
-                <li>Skin Treatment</li>
-                <li>Fashion Make Up</li>
-                <li>Bridal Make Up</li>
-                <li>Professional Photoshoots</li>
-            </ul>
-        </div>
-        <div>
-            <h3 style="font-size: 1.2em; margin-bottom: 0.5em;">Email</h3>
-            
-            <p><a href="mailto:idadhiambo103@gmail.com" style="text-decoration: none; color: inherit;">dadhiambo103@gmail.com</a></p>
-
-            <h3 style="font-size: 1.2em; margin-bottom: 0.5em;">Address</h3>
-            <p>Located in umoja 3 stage kobil flats ground floor,<br>Nairobi,Kenya</p>
-        </div>
-        <div>
-            <h3 style="font-size: 1.2em; margin-bottom: 0.5em;">Business Hours</h3>
-            <ul style="list-style: none; padding: 0; margin: 0;">
-                <li>Monday – Closed</li>
-                <li>Tuesday : 11.00 – 09.00</li>
-                <li>Wednesday : 11.00 – 09.00</li>
-                <li>Thursday : 11.00 – 09.00</li>
-                <li>Friday : 11.00 – 09.00</li>
-                <li>Saturday : 11.00 – 09.00</li>
-                <li>Sunday : 11.00 – 09.00</li>
-            </ul>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="https://codepen.io/anupkumar92/">Swizz</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#contact-us">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    
 
 
 
@@ -386,5 +480,6 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>

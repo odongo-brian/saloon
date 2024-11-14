@@ -15,3 +15,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     ///function to send email notification
     
+
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    
